@@ -4,7 +4,7 @@ int main(void) {
     int valor = 20;
     int *ponteiro;
 
-    ponteiro = &valor; // O ponteiro recebe o endereco de 'valor'
+    ponteiro = &valor; 
 
     printf("Valor da variavel: %d\n", valor);
     printf("Endereco da variavel: %p\n", (void *)&valor);
