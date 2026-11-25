@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+    float matriz[2][2];
+
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("Digite o valor para [%d][%d]: ", i, j);
+            scanf("%f", &matriz[i][j]);
+        }
+    }
+
+    printf("\nMatriz digitada:\n");
+    for (int i = 0; i < 2; i++) {
+        printf("|");
+        for (int j = 0; j < 2; j++) {
+            printf(" %7.2f |", matriz[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
